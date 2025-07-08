@@ -1,3 +1,5 @@
+//Component branch product-card
+
 import { LitElement, css, html } from "lit";
 
 export class CartCounter extends LitElement {

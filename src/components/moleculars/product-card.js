@@ -1,3 +1,5 @@
+//Component branch product-card
+
 import { LitElement, css, html } from "lit";
 import '../atomic/buttons/fav-button.js'
 import '../atomic/buttons/log-button.js'

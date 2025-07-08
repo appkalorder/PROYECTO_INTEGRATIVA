@@ -26,6 +26,31 @@
     <product-card></product-card>
     <product-card></product-card>
     <product-card></product-card>
-  </espe-layout>
+
+    <div class="purchase-button-container">
+            <button id="makePurchaseButton">Realizar Compra</button>
+        </div>
+
+        <espe-alerts id="globalAlert"></espe-alerts>
+    </espe-layout>
+
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', () => {
+            const globalAlert = document.getElementById('globalAlert');
+            const makePurchaseButton = document.getElementById('makePurchaseButton');
+
+            if (makePurchaseButton && globalAlert) {
+                makePurchaseButton.addEventListener('click', () => {
+                    const purchaseSuccessful = Math.random() > 0.5;
+
+                    if (purchaseSuccessful) {
+                        globalAlert.showAlert('success', '¡Compra realizada con éxito! Gracias por tu pedido.');
+                    } else {
+                        globalAlert.showAlert('error', 'Error al procesar la compra. Por favor, intenta de nuevo.');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

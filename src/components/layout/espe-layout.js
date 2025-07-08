@@ -23,6 +23,7 @@ export class EspeLayout extends LitElement {
   }
 
   .content {
+    position: relative
     flex: 1;
     padding: 20px 40px;
     gap: 20px;

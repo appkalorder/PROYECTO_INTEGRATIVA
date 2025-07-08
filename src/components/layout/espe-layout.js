@@ -24,6 +24,12 @@ export class EspeLayout extends LitElement {
 
   .content {
     flex: 1;
+    padding: 20px 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
   }
   `;
 

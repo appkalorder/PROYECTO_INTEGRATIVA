@@ -4,6 +4,8 @@ import '../atomic/buttons/log-button.js';
 import '../atomic/buttons/cart-counter.js';
 import './product-modal.js';
 
+
+
 export class ProductCard extends LitElement {
   static properties = {
     image: { type: String },

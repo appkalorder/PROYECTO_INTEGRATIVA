@@ -2,6 +2,9 @@ import { LitElement, css, html } from "lit";
 import '../atomic/buttons/fav-button.js';
 import '../atomic/buttons/log-button.js';
 import '../atomic/buttons/cart-counter.js';
+import './product-modal.js';
+
+
 
 export class ProductCard extends LitElement {
   static properties = {
@@ -61,6 +64,11 @@ export class ProductCard extends LitElement {
     this.image = color.img;
   }
 
+  openModal() {
+    const modal = this.shadowRoot.querySelector('product-modal');
+    modal.openModal();
+  }
+
   static styles = css`
     .card {
       position: relative;
@@ -72,6 +80,12 @@ export class ProductCard extends LitElement {
       max-width: 400px;
       border-radius: 20px;
       overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .title {
@@ -264,7 +278,7 @@ export class ProductCard extends LitElement {
 
   render() {
     return html`
-      <div class="card">
+      <div class="card" @click="${this.openModal}">
         <span class="title">${this.title || "Nike Air Zoom Pegasus 41"}</span>
 
         <div class="main-section">
@@ -276,7 +290,10 @@ export class ProductCard extends LitElement {
                 size => html`
                   <button
                     class="${this.selectedSize === size ? 'active' : ''}"
-                    @click="${() => this.selectedSize = size}"
+                    @click="${(e) => {
+                      e.stopPropagation();
+                      this.selectedSize = size;
+                    }}"
                   >${size}</button>
                 `
               )}
@@ -298,7 +315,10 @@ export class ProductCard extends LitElement {
                 <button
                   style="background-color: ${color.hex}"
                   class="${this.selectedColor === color.name ? 'active' : ''}"
-                  @click="${() => this.changeColor(color)}"
+                  @click="${(e) => {
+                    e.stopPropagation();
+                    this.changeColor(color);
+                  }}"
                 ></button>
               `
             )}
@@ -325,6 +345,9 @@ export class ProductCard extends LitElement {
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <product-modal></product-modal>
     `;
   }
 }

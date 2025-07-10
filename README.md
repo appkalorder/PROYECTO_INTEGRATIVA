@@ -27,3 +27,21 @@ Este proyecto es una aplicación web desarrollada con **LitElement** que simula 
 ---
 
 Este proyecto es una base para prácticas de integración de componentes web y autenticación
+```bash 
+Ruta:src/components/layout/espe-layout.js
+```
+## Ejemplo de Componentes de Layout:
+
+### Componente: `espe-layout.js`
+
+- Este componente es el contenedor principal de la aplicación, que organiza y agrupa otros componentes como el header y el footer. Es útil para mantener la estructura general de la página.
+  
+- Utiliza este componente para envolver el contenido de la página y agregarle la estructura general (header, footer, etc.).
+  
+### Implementación
+```html  
+<espe-layout>
+  <!-- Contenido de la página -->
+</espe-layout>
+```
+Este componente no tiene propiedades configurables. Se utiliza para contener y organizar otros componentes, como el pie de página o la barra de navegación, proporcionando la estructura base de la página. 

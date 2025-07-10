@@ -399,15 +399,15 @@ Este componente no tiene propiedades configurables. Se utiliza para contener y o
   ![Captura de ejecución](img/orden.png)
 
 
-# 5. Componentes Complejos  `(models)`:
+# 5.   `(models)`:
 
 ```bash
 Ruta: src/models
 ```  
 
-## Ejemplo de Componentes models:
+## Ejemplo de models:
 
-- Componente: espe-alerts.js
+- espe-alerts.js
 
 ```bash
 Ruta: src/models/user.js

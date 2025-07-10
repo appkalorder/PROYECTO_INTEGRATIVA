@@ -61,6 +61,9 @@ Ruta: src/components/moleculars/product-card.js
 - `extended`: Si se activa, muestra una descripción más extensa del producto.
 
 # Cambio de colores de los zapatos 
+
+> Este código es un componente de LitElement que muestra una tarjeta de producto con opciones de colores y tallas. La tarjeta permite al usuario seleccionar un color, lo que cambia la imagen del producto de acuerdo al color elegido. Los colores y sus respectivas imágenes están definidos en un arreglo, y al hacer clic en un color, se actualiza la propiedad selectedColor y la imagen del producto con el color correspondiente. Además, se manejan otras opciones como talla, precio y un modal para más detalles del producto.
+
 ```js  
  name: "verde",
         hex: "#B8FF32",

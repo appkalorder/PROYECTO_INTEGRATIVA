@@ -149,7 +149,27 @@ Ruta: src/components/atomic/inputs/form-input.js
 
 - El estado de error (rojo) y éxito (verde) se visualizan con bordes de color correspondiente y cambios en el placeholder.
   
+## Carpeta search 
+
+### Componente: nav-search.js
+
+```bash
+Ruta: src/components/atomic/search/nav-search.js
+```
+
+- Este componente es una barra de búsqueda que permite al usuario ingresar texto para realizar búsquedas. Incluye un ícono de lupa en el lado derecho y un fondo verde con texto en color blanco.
+- Se utiliza para agregar una funcionalidad de búsqueda en la navegación o en cualquier sección de la aplicación.
   
+### Implementación 
+```html  
+<nav-search></nav-search>
+```
+### Estilos
+---
+Fondo verde (#004D00) con texto en color blanco (#FFFFCC).
+
+El input no tiene bordes y tiene un estilo limpio, con el ícono de búsqueda en el lado derecho.
+--- 
 
 # 2. Componentes Moleculares `(moleculars)`:
 
@@ -294,6 +314,55 @@ Ruta: src/components/complex/espe-navbar.js
 ```
   ![Captura de ejecución](img/nav.png)
 
+### Componente: `espe-aside.js`
+
+```bash 
+Ruta: src/components/complex/espe-aside.js
+```
+
+- Descripción:Este componente representa una barra lateral (aside) que muestra cupones con imágenes y detalles. La barra es estrecha por defecto y se expande cuando el usuario pasa el cursor sobre ella. Muestra información de descuentos o promociones en forma de cupones.
+
+-  Se utiliza para mostrar información adicional, como cupones o anuncios, en una barra lateral fija.
+  
+### Implementación
+
+```html
+<espe-aside></espe-aside>
+```
+
+### Componente: `espe-loggin.js`
+
+```bash 
+Ruta: src/components/complex/espe-loggin.js
+```
+
+- Descripción: Este componente muestra un modal para el inicio de sesión. Incluye campos para ingresar correo y contraseña, con la opción de abrir el formulario de registro si el usuario no tiene cuenta. El modal se puede cerrar y manejar eventos de éxito de inicio de sesión.
+
+- Se utiliza para permitir que los usuarios inicien sesión en la aplicación.
+  
+### Implementación
+
+```html
+<espe-loggin></espe-loggin>
+```
+
+### Componente: `espe-register.js`
+
+```bash 
+Ruta: src/components/complex/espe-register.js
+```
+
+- Descripción: Este componente muestra un modal para el registro de nuevos usuarios. Incluye campos para ingresar nombre, correo, contraseña y repetir la contraseña, con validaciones y la opción de abrir el formulario de inicio de sesión si el usuario ya tiene cuenta.
+
+- Se utiliza para permitir que los usuarios se registren en la aplicación.
+  
+### Implementación
+
+```html
+<espe-register></espe-register>
+```
+  
+
 # 4. Componentes Complejos  `(layout)`:
 
 ```bash 
@@ -314,6 +383,9 @@ Ruta:src/components/layout/espe-layout.js
 </espe-layout>
 ```
 Este componente no tiene propiedades configurables. Se utiliza para contener y organizar otros componentes, como el pie de página o la barra de navegación, proporcionando la estructura base de la página. 
+
+# 5. Componentes Complejos  `(models)`:
+
 
 # Conclusiones
 

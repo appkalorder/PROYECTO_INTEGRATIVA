@@ -85,7 +85,8 @@ Ruta: src/components/atomic/buttons/cart-counter.js
 - increment(): Aumenta el contador.
 
 - decrement(): Disminuye el contador (no permite valores negativos).
-  
+
+  ![Captura de ejecución](img/incremento.png)
 
 ## Componente: `fav-button.js`
 
@@ -101,6 +102,9 @@ Ruta: src/components/atomic/buttons/fav-button.js
 ```
 ### Métodos
 - toggleActive(): Cambia el estado del botón entre activo e inactivo.
+
+  ![Captura de ejecución](img/favorito.png)
+
 
 ## Componente: ` log-button.js`
 

@@ -120,10 +120,11 @@ Ruta: src/components/moleculars/
 
 -  Un botón genérico utilizado para iniciar sesión o realizar otras acciones.
 -  Este botón es personalizable mediante el contenido del slot.
-- 
+  
  ```html 
 <log-button>Iniciar sesión</log-button>
 ```
+  ![Captura de ejecución](img/sesion.png)
 
 ## Ejemplo de Componentes Moleculares:
 

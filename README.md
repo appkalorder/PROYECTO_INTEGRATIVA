@@ -27,3 +27,19 @@ Este proyecto es una aplicación web desarrollada con **LitElement** que simula 
 ---
 
 Este proyecto es una base para prácticas de integración de componentes web y autenticación
+
+### Componente: `espe-aside.js`
+
+```bash 
+Ruta: src/components/complex/espe-aside.js
+```
+
+- Descripción:Este componente representa una barra lateral (aside) que muestra cupones con imágenes y detalles. La barra es estrecha por defecto y se expande cuando el usuario pasa el cursor sobre ella. Muestra información de descuentos o promociones en forma de cupones.
+
+-  Se utiliza para mostrar información adicional, como cupones o anuncios, en una barra lateral fija.
+  
+### Implementación
+
+```html
+<espe-aside></espe-aside>
+``` 

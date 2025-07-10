@@ -1,4 +1,4 @@
-# Proyecto: Sistema de Autenticación y Navegación ESPE
+# Proyecto: Sistema de Autenticación y Navegación ESPE FEO EL QUE LEA 
 
 Este proyecto es una aplicación web desarrollada con **LitElement** que simula un sistema de autenticación y navegación para la ESPE. Incluye componentes reutilizables como barra de navegación, formularios de inicio de sesión y registro, y campos de entrada personalizados.
 

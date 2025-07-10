@@ -30,13 +30,16 @@ Este proyecto es una base para prácticas de integración de componentes web y a
 # 1 Componentes Atómicos `(atomic)`:
 
 ```bash
-Ruta: src/components/atomic/{nombre_componente}.js
+Ruta: src/components/atomic/alert
 ```
 
 ## Ejemplo de Componentes Atómicos:
 
 - Componente: espe-alerts.js
 
+```bash
+Ruta: src/components/atomic/alerts/espe-alerts.js
+```  
 ### Descripción:
 
 - Este componente es un sistema de alertas visuales que muestra mensajes de éxito o error en la pantalla.
@@ -64,6 +67,10 @@ alert.showAlert('success', '¡Compra realizada con éxito!');
 
 ## Componente: `cart-counter.js`
 
+```bash
+Ruta: src/components/atomic/buttons/cart-counter.js
+```  
+
 - Descripción: Muestra un contador de productos en el carrito.
 
 - Este componente permite al usuario incrementar o decrementar la cantidad de un artículo en su carrito de compras.
@@ -78,17 +85,49 @@ alert.showAlert('success', '¡Compra realizada con éxito!');
 - increment(): Aumenta el contador.
 
 - decrement(): Disminuye el contador (no permite valores negativos).
+  
 
+## Componente: `fav-button.js`
+
+```bash
+Ruta: src/components/atomic/buttons/fav-button.js
+```
+
+- Este componente es un botón de favorito que permite al usuario marcar un producto como favorito.
+- Al hacer clic en este botón, se cambia su estado de activo a inactivo, utilizando la propiedad `active`.
+  
+ ```html 
+<fav-button></fav-button>
+```
+### Métodos
+- toggleActive(): Cambia el estado del botón entre activo e inactivo.
+
+## Componente: ` log-button.js`
+
+```bash
+Ruta: src/components/atomic/buttons/fav-button.js
+```
 
 # 2. Componentes Moleculares `(moleculars)`:
 
 ```bash 
-Ruta: src/components/moleculars/{nombre_componente}.js
+Ruta: src/components/moleculars/
 ```
+
+-  Un botón genérico utilizado para iniciar sesión o realizar otras acciones.
+-  Este botón es personalizable mediante el contenido del slot.
+- 
+ ```html 
+<log-button>Iniciar sesión</log-button>
+```
+
 ## Ejemplo de Componentes Moleculares:
 
 ### Componente: `product-card.js`
 
+```bash 
+Ruta: src/components/moleculars/product-card.js
+```
 - Descripción: Muestra la tarjeta de un producto con su nombre, precio, descuento y una descripción breve.
 
 - Este componente es útil para mostrar productos en una tienda en línea.
@@ -98,6 +137,7 @@ Ruta: src/components/moleculars/{nombre_componente}.js
   Las Nike Air Zoom Pegasus están diseñadas para una carrera superior...
 </product-card>
 ```
+
 ### Propiedades:
 
 - `title`: Título del producto.
@@ -107,29 +147,69 @@ Ruta: src/components/moleculars/{nombre_componente}.js
 - `discount`: Descuento aplicado.
 
 - `extended`: Si se activa, muestra una descripción más extensa del producto.
+  
 
 # 3. Componentes Complejos  `(complex)`:
 
 ```bash 
-Ruta: src/components/complex/{nombre_componente}.js
+Ruta: src/components/complex/
 ```
 
 ## Ejemplo de Componentes Complejos:
 
-> Componente: espe-footer.js
+### Componente: `espe-footer.js` 
+
+```bash 
+Ruta: src/components/complex/espe-footer.js
+```
 
 - Descripción: Este componente es el pie de página de la aplicación.
 
 - El pie de página contiene información de derechos de autor y otros detalles importantes.
 
-### Implementación:
+### Implementación
+
 ```html  
 <espe-footer></espe-footer>
 ```
 > Estilo: Fondo rojo y texto blanco centrado en la parte inferior de la pantalla.
 
+  ![Captura de ejecución](img/footer.png)
 
+### Componente: `espe-navbar.js`
 
+```bash 
+Ruta: src/components/complex/espe-navbar.js
+```
 
+- Descripción: Barra de navegación con enlaces a las secciones principales y la opción de iniciar sesión o registrarse.
 
+- Este componente se coloca generalmente en la parte superior de la aplicación para facilitar la navegación entre secciones.
+  
+### Implementación
+
+```html  
+<espe-navbar></espe-navbar>
+```
+
+# 4. Componentes Complejos  `(layout)`:
+
+```bash 
+Ruta:src/components/layout/espe-layout.js
+```
+## Ejemplo de Componentes de Layout:
+
+### Componente: `espe-layout.js`
+
+- Este componente es el contenedor principal de la aplicación, que organiza y agrupa otros componentes como el header y el footer. Es útil para mantener la estructura general de la página.
+  
+- Utiliza este componente para envolver el contenido de la página y agregarle la estructura general (header, footer, etc.).
+  
+### Implementación
+```html  
+<espe-layout>
+  <!-- Contenido de la página -->
+</espe-layout>
+```
+Este componente no tiene propiedades configurables. Se utiliza para contener y organizar otros componentes, como el pie de página o la barra de navegación, proporcionando la estructura base de la página. 
 

@@ -29,6 +29,8 @@ Este proyecto es una base para prácticas de integración de componentes web y a
 ---
 # 1 Componentes Atómicos `(atomic)`:
 
+## carpeta alerts
+
 ```bash
 Ruta: src/components/atomic/alert
 ```
@@ -64,6 +66,7 @@ alert.showAlert('success', '¡Compra realizada con éxito!');
 
 - isVisible: Determina si la alerta es visible o no.
 
+# `carpeta buttons`
 
 ## Componente: `cart-counter.js`
 
@@ -109,8 +112,44 @@ Ruta: src/components/atomic/buttons/fav-button.js
 ## Componente: ` log-button.js`
 
 ```bash
-Ruta: src/components/atomic/buttons/fav-button.js
+Ruta: src/components/atomic/buttons/log-button.js
 ```
+- Este componente es un botón genérico utilizado para realizar acciones como iniciar sesión o registrarse. Se personaliza mediante el contenido del slot.
+  
+- Puedes utilizar este componente para crear un botón que contenga texto dinámico, como "Iniciar sesión" o "Registrarse". El contenido del botón se pasa a través del slot.
+
+  ### Implementación
+  
+ ```index 
+<log-button>Iniciar sesión</log-button>
+```
+### Estilos
+---
+El componente tiene un estilo con fondo verde (#004D00) y texto en color crema (#FFFFCC). El botón tiene un borde redondeado y un tamaño de 100% de ancho, lo que hace que se ajuste a su contenedor. 
+
+# Carpeta inputs
+
+## Componente: ` form-input.js`
+
+```bash 
+Ruta: src/components/atomic/inputs/form-input.js
+```
+
+- Este componente es un campo de entrada personalizado para formularios. Permite al usuario ingresar datos con validación visual (errores y éxitos). Además, se puede personalizar con atributos como placeholder, id, name, y type (que determina el tipo de campo como texto, contraseña, etc.).
+-  Se utiliza para crear campos de entrada en formularios, con la capacidad de manejar diferentes tipos de campos y mostrar mensajes de error o éxito en función del estado del campo.
+
+  ### Implementación
+  
+ ```index 
+<form-input placeholder="Ingresa tu nombre" id="username" name="username" type="text"></form-input>
+```
+### Estilos
+
+- El componente tiene bordes redondeados con un color gris claro y un padding en el campo de entrada para hacerlo más accesible.
+
+- El estado de error (rojo) y éxito (verde) se visualizan con bordes de color correspondiente y cambios en el placeholder.
+  
+  
 
 # 2. Componentes Moleculares `(moleculars)`:
 
@@ -142,7 +181,6 @@ Ruta: src/components/moleculars/product-card.js
   Las Nike Air Zoom Pegasus están diseñadas para una carrera superior...
 </product-card>
 ```
-
 ### Propiedades:
 
 - `title`: Título del producto.
@@ -153,12 +191,70 @@ Ruta: src/components/moleculars/product-card.js
 
 - `extended`: Si se activa, muestra una descripción más extensa del producto.
   
+  
+### Componente: `product-modal.js`
+
+```bash 
+Ruta: src/components/moleculars/product-modal.js
+```
+
+- Este componente representa un modal que se abre para mostrar los detalles de un producto. Permite seleccionar el color, talla, y ver la descripción del producto. Además, incluye un botón para agregar el producto al carrito de compras y un botón de favorito.
+- Se utiliza para mostrar un modal detallado con la información de un producto. El modal incluye una imagen, opciones de tamaño y color, una descripción detallada del producto y un botón para agregarlo al carrito.
+  
+ ### Implementación
+  
+```html 
+<product-modal></product-modal>
+
+```
+### Propiedades 
+
+> isOpen: Define si el modal está abierto o cerrado.
+
+> image: La imagen del producto que se muestra en el modal.
+
+> title: El nombre del producto.
+
+> isFav: Indica si el producto está marcado como favorito.
+
+> discount: El descuento aplicado al producto.
+
+> price: El precio del producto.
+
+> colors: Lista de colores disponibles para el producto.
+
+> selectedColor: El color seleccionado actualmente.
+
+> sizes: Lista de tallas disponibles.
+
+> selectedSize: La talla seleccionada actualmente.
+
+> description: Descripción detallada del producto.
+
+## Funciones clave 
+
+- changeColor(color): Cambia el color y la imagen del producto cuando se selecciona un color diferente.
+
+- openModal(): Abre el modal.
+
+- closeModal(): Cierra el modal.
+
+- handleContentClick(e): Previene que un clic en el contenido del modal cierre el modal.
+
+### Estilos 
+
+El modal tiene una capa de fondo semitransparente (overlay) que oscurece el contenido de la página.
+
+El contenido del modal se muestra con un borde redondeado y tiene una transición suave para la apertura y cierre.
+
+El modal incluye áreas de selección de talla y color, que se presentan como botones interactivos.
 
 # 3. Componentes Complejos  `(complex)`:
 
 ```bash 
 Ruta: src/components/complex/
 ```
+# Carpeta complex
 
 ## Ejemplo de Componentes Complejos:
 

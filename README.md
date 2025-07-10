@@ -42,4 +42,6 @@ Ruta: src/components/complex/espe-aside.js
 
 ```html
 <espe-aside></espe-aside>
-``` 
+```
+  ![Captura de ejecución](img/aside.png)
+

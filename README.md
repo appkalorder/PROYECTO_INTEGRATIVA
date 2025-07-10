@@ -386,6 +386,45 @@ Este componente no tiene propiedades configurables. Se utiliza para contener y o
 
 # 5. Componentes Complejos  `(models)`:
 
+```bash
+Ruta: src/models
+```  
+
+## Ejemplo de Componentes models:
+
+- Componente: espe-alerts.js
+
+```bash
+Ruta: src/models/user.js
+```  
+### Descripción:
+
+- Este componente define la clase User, que representa a un usuario en el sistema. La clase contiene propiedades como name, email y password, con métodos para obtener y modificar estos valores.
+
+Se utiliza para manejar los datos del usuario, permitiendo acceder y modificar su nombre, correo y contraseña.
+
+> Implementación:
+
+```js
+const user = new User('John Doe', 'johndoe@example.com', 'password123');
+console.log(user.getName()); // John Doe
+```
+
+## Métodos:
+
+- getName(): Retorna el nombre del usuario.
+
+- getEmail(): Retorna el correo electrónico del usuario.
+
+- getPassword(): Retorna la contraseña del usuario.
+
+- setName(name): Establece un nuevo nombre para el usuario.
+
+- setEmail(email): Establece un nuevo correo electrónico para el usuario.
+
+- setPassword(password): Establece una nueva contraseña para el usuario.
+
+
 
 # Conclusiones
 

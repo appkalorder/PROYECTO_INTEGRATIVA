@@ -338,6 +338,9 @@ Ruta: src/components/complex/espe-aside.js
 <espe-aside></espe-aside>
 ```
 
+  ![Captura de ejecución](img/aside.png)
+
+
 ### Componente: `espe-loggin.js`
 
 ```bash 

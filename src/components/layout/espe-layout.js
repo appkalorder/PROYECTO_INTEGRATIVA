@@ -3,6 +3,7 @@
 import { css, html, LitElement } from 'lit';
 import '../complex/espe-footer.js';
 import '../complex/espe-navbar.js';
+import '../complex/espe-aside.js';
 
 export class EspeLayout extends LitElement {
 
@@ -25,6 +26,7 @@ export class EspeLayout extends LitElement {
   }
 
   .content {
+    position: relative;
     flex: 1;
     padding: 20px 40px;
     gap: 20px;

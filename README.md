@@ -196,6 +196,7 @@ Ruta: src/components/complex/espe-navbar.js
 ```html  
 <espe-navbar></espe-navbar>
 ```
+  ![Captura de ejecución](img/nav.png)
 
 # 4. Componentes Complejos  `(layout)`:
 

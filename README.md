@@ -27,3 +27,37 @@ Este proyecto es una aplicación web desarrollada con **LitElement** que simula 
 ---
 
 Este proyecto es una base para prácticas de integración de componentes web y autenticación
+
+## carpeta alerts
+
+```bash
+Ruta: src/components/atomic/alert
+```
+- Componente: espe-alerts.js
+
+```bash
+Ruta: src/components/atomic/alerts/espe-alerts.js
+```  
+### Descripción:
+
+- Este componente es un sistema de alertas visuales que muestra mensajes de éxito o error en la pantalla.
+
+Uso: Puedes utilizar este componente para mostrar mensajes informativos al usuario. El tipo de mensaje (success, error) y el texto son configurables a través de las propiedades.
+
+> Implementación:
+
+```html
+<espe-alerts id="alert"></espe-alerts>
+```
+
+```js
+const alert = document.getElementById('alert');
+alert.showAlert('success', '¡Compra realizada con éxito!');
+```
+## Propiedades:
+
+- type: Tipo de alerta (success, error).
+
+- message: El mensaje que se muestra.
+
+- isVisible: Determina si la alerta es visible o no. 

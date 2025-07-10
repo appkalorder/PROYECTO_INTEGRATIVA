@@ -392,6 +392,9 @@ Ruta:src/components/layout/espe-layout.js
 ```
 Este componente no tiene propiedades configurables. Se utiliza para contener y organizar otros componentes, como el pie de página o la barra de navegación, proporcionando la estructura base de la página. 
 
+  ![Captura de ejecución](img/orden.png)
+
+
 # 5. Componentes Complejos  `(models)`:
 
 ```bash
@@ -432,6 +435,9 @@ console.log(user.getName()); // John Doe
 
 - setPassword(password): Establece una nueva contraseña para el usuario.
 
+# Ejecución Final
+
+  ![Captura de ejecución](img/ejecucionF.png)
 
 
 # Conclusiones

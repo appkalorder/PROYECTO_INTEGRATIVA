@@ -218,3 +218,8 @@ Ruta:src/components/layout/espe-layout.js
 ```
 Este componente no tiene propiedades configurables. Se utiliza para contener y organizar otros componentes, como el pie de página o la barra de navegación, proporcionando la estructura base de la página. 
 
+# Conclusiones
+
+-  La organización de los componentes en carpetas como atomic, moleculars, complex y layout facilita la navegación y mantenimiento del código, lo que ayuda a tener  desarrollo más eficiente y escalable. Esta estructuración modular hace que sea fácil encontrar, modificar y reutilizar los componentes en diferentes partes de la aplicación.
+
+- La estrategia de construir componentes reutilizables, como botones, alertas, formularios y tarjetas de productos, aumenta la flexibilidad y la consistencia en la aplicación. Los desarrolladores pueden enfocarse en nuevas funcionalidades sin tener que reescribir el mismo código,

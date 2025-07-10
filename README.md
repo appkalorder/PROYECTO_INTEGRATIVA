@@ -218,7 +218,7 @@ Ruta: src/components/moleculars/product-card.js
 
 - `extended`: Si se activa, muestra una descripción más extensa del producto.
   
-   ![Captura de ejecución](img/sesion.png)
+   ![Captura de ejecución](img/tarjeta.png)
 
 ### Componente: `product-modal.js`
 

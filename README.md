@@ -27,3 +27,37 @@ Este proyecto es una aplicación web desarrollada con **LitElement** que simula 
 ---
 
 Este proyecto es una base para prácticas de integración de componentes web y autenticación
+
+# 2. Componentes Moleculares `(moleculars)`:
+
+```bash 
+Ruta: src/components/moleculars/
+```
+
+## Ejemplo de Componentes Moleculares:
+
+### Componente: `product-card.js`
+
+```bash 
+Ruta: src/components/moleculars/product-card.js
+```
+- Descripción: Muestra la tarjeta de un producto con su nombre, precio, descuento y una descripción breve.
+
+- Este componente es útil para mostrar productos en una tienda en línea.
+  
+```html  
+<product-card title="Nike Air Zoom Pegasus 41" price="80.90" discount="20" extended>
+  Las Nike Air Zoom Pegasus están diseñadas para una carrera superior...
+</product-card>
+```
+### Propiedades:
+
+- `title`: Título del producto.
+
+- `price`: Precio del producto.
+
+- `discount`: Descuento aplicado.
+
+- `extended`: Si se activa, muestra una descripción más extensa del producto.
+  
+   ![Captura de ejecución](img/tarjeta.png)

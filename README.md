@@ -127,6 +127,10 @@ Ruta: src/components/atomic/buttons/log-button.js
 ---
 El componente tiene un estilo con fondo verde (#004D00) y texto en color crema (#FFFFCC). El botón tiene un borde redondeado y un tamaño de 100% de ancho, lo que hace que se ajuste a su contenedor. 
 
+
+  ![Captura de ejecución](img/usuA.png)
+
+
 # Carpeta inputs
 
 ## Componente: ` form-input.js`
@@ -148,7 +152,9 @@ Ruta: src/components/atomic/inputs/form-input.js
 - El componente tiene bordes redondeados con un color gris claro y un padding en el campo de entrada para hacerlo más accesible.
 
 - El estado de error (rojo) y éxito (verde) se visualizan con bordes de color correspondiente y cambios en el placeholder.
-  
+
+    ![Captura de ejecución](img/registro.png)
+
 ## Carpeta search 
 
 ### Componente: nav-search.js

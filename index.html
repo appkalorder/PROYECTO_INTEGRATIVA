@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -17,41 +17,61 @@
     <product-card 
       title="Nike Air Zoom Pegasus 41"
       image="https://static.nike.com/a/images/t_default/63c4596a-ca9a-4a56-82f3-0387903ed5f1/AIR+ZOOM+PEGASUS+41.png"
-      discount="4"
-      price="10"
-      >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ut officia, mollitia atque rem ipsam expedita cum perferendis neque autem voluptatem molestias, temporibus exercitationem ea quo doloremque sed! Quam, necessitatibus.
-      <!-- image="https://tcrunningco.com/cdn/shop/files/AURORA_FD2723-701_PHCTH001-2000_700x700.png?v=1715136462" -->
+      discount="20"
+      price="80.90">
+      Las Nike Air Zoom Pegasus 41 están diseñadas para ofrecer una experiencia de carrera superior, combinando innovación, 
+      confort y estilo....
     </product-card>
-    <product-card></product-card>
-    <product-card></product-card>
-    <product-card></product-card>
+    <product-card 
+      title="Nike Air Zoom Pegasus 41"
+      image="https://static.nike.com/a/images/t_default/63c4596a-ca9a-4a56-82f3-0387903ed5f1/AIR+ZOOM+PEGASUS+41.png"
+      discount="20"
+      price="80.90">
+      Las Nike Air Zoom Pegasus 41 están diseñadas para ofrecer una experiencia de carrera superior, combinando innovación, 
+      confort y estilo....
+    </product-card>
+    <product-card 
+      title="Nike Air Zoom Pegasus 41"
+      image="https://static.nike.com/a/images/t_default/63c4596a-ca9a-4a56-82f3-0387903ed5f1/AIR+ZOOM+PEGASUS+41.png"
+      discount="20"
+      price="80.90">
+      Las Nike Air Zoom Pegasus 41 están diseñadas para ofrecer una experiencia de carrera superior, combinando innovación, 
+      confort y estilo....
+    </product-card>
+    <product-card 
+      title="Nike Air Zoom Pegasus 41"
+      image="https://static.nike.com/a/images/t_default/63c4596a-ca9a-4a56-82f3-0387903ed5f1/AIR+ZOOM+PEGASUS+41.png"
+      discount="20"
+      price="80.90">
+      Las Nike Air Zoom Pegasus 41 están diseñadas para ofrecer una experiencia de carrera superior, combinando innovación, 
+      confort y estilo....
+    </product-card>
 
     <div class="purchase-button-container">
-            <button id="makePurchaseButton">Realizar Compra</button>
-        </div>
+      <button id="makePurchaseButton">Realizar Compra</button>
+    </div>
 
         <espe-alerts id="globalAlert"></espe-alerts>
         <espe-aside></espe-aside>
     </espe-layout>
 
-    <script type="module">
-        document.addEventListener('DOMContentLoaded', () => {
-            const globalAlert = document.getElementById('globalAlert');
-            const makePurchaseButton = document.getElementById('makePurchaseButton');
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', () => {
+      const globalAlert = document.getElementById('globalAlert');
+      const makePurchaseButton = document.getElementById('makePurchaseButton');
 
-            if (makePurchaseButton && globalAlert) {
-                makePurchaseButton.addEventListener('click', () => {
-                    const purchaseSuccessful = Math.random() > 0.5;
+      if (makePurchaseButton && globalAlert) {
+        makePurchaseButton.addEventListener('click', () => {
+          const purchaseSuccessful = Math.random() > 0.5;
 
-                    if (purchaseSuccessful) {
-                        globalAlert.showAlert('success', '¡Compra realizada con éxito! Gracias por tu pedido.');
-                    } else {
-                        globalAlert.showAlert('error', 'Error al procesar la compra. Por favor, intenta de nuevo.');
-                    }
-                });
-            }
+          if (purchaseSuccessful) {
+            globalAlert.showAlert('success', '¡Compra realizada con éxito! Gracias por tu pedido.');
+          } else {
+            globalAlert.showAlert('error', 'Error al procesar la compra. Por favor, intenta de nuevo.');
+          }
         });
-    </script>
+      }
+    });
+  </script>
 </body>
 </html>

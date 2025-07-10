@@ -353,6 +353,8 @@ Ruta: src/components/complex/espe-loggin.js
 ```html
 <espe-loggin></espe-loggin>
 ```
+  ![Captura de ejecución](img/imicioS.png)
+
 
 ### Componente: `espe-register.js`
 
@@ -369,7 +371,6 @@ Ruta: src/components/complex/espe-register.js
 ```html
 <espe-register></espe-register>
 ```
-  
 
 # 4. Componentes Complejos  `(layout)`:
 

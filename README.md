@@ -171,11 +171,12 @@ Ruta: src/components/atomic/search/nav-search.js
 <nav-search></nav-search>
 ```
 ### Estilos
----
+
 Fondo verde (#004D00) con texto en color blanco (#FFFFCC).
 
 El input no tiene bordes y tiene un estilo limpio, con el ícono de búsqueda en el lado derecho.
---- 
+
+  ![Captura de ejecución](img/buscar.png)
 
 # 2. Componentes Moleculares `(moleculars)`:
 
@@ -217,7 +218,8 @@ Ruta: src/components/moleculars/product-card.js
 
 - `extended`: Si se activa, muestra una descripción más extensa del producto.
   
-  
+   ![Captura de ejecución](img/sesion.png)
+
 ### Componente: `product-modal.js`
 
 ```bash 

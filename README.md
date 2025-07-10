@@ -27,3 +27,36 @@ Este proyecto es una aplicación web desarrollada con **LitElement** que simula 
 ---
 
 Este proyecto es una base para prácticas de integración de componentes web y autenticación
+
+### Componente: `espe-loggin.js`
+
+```bash 
+Ruta: src/components/complex/espe-loggin.js
+```
+
+- Descripción: Este componente muestra un modal para el inicio de sesión. Incluye campos para ingresar correo y contraseña, con la opción de abrir el formulario de registro si el usuario no tiene cuenta. El modal se puede cerrar y manejar eventos de éxito de inicio de sesión.
+
+- Se utiliza para permitir que los usuarios inicien sesión en la aplicación.
+  
+### Implementación
+
+```html
+<espe-loggin></espe-loggin>
+```
+
+
+### Componente: `espe-register.js`
+
+```bash 
+Ruta: src/components/complex/espe-register.js
+```
+
+- Descripción: Este componente muestra un modal para el registro de nuevos usuarios. Incluye campos para ingresar nombre, correo, contraseña y repetir la contraseña, con validaciones y la opción de abrir el formulario de inicio de sesión si el usuario ya tiene cuenta.
+
+- Se utiliza para permitir que los usuarios se registren en la aplicación.
+  
+### Implementación
+
+```html
+<espe-register></espe-register>
+```
